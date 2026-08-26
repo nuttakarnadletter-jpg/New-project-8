@@ -9,7 +9,7 @@
     document.documentElement.classList.toggle("preview-locked", !RanotechPreviewAuth.isAuthenticated());
   </script>
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Rano Tech ร้านขายท่อ PPR แคล้มรัดท่อ เครื่องเชื่อมท่อ PPR, HDPE และโซลูชันงานระบบท่ออุตสาหกรรม" />
+  <meta name="description" content="Rano Tech ร้านขายท่อ PPR แคล้มป์รัดท่อ เครื่องเชื่อมท่อ PPR, HDPE และโซลูชันงานระบบท่ออุตสาหกรรม" />
   <title>Rano Tech | หน้าแรก</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -204,7 +204,7 @@
     }
 
     .search-form {
-      width: 138px;
+      width: 210px;
       height: 38px;
       justify-content: space-between;
       padding: 0 10px 0 16px;
@@ -381,7 +381,7 @@
       background:
         var(--hero-overlay-vertical),
         var(--hero-overlay-horizontal),
-        var(--hero-image, url("assets/hero/option-b-hero-ppr-1.jpg")) var(--hero-position, right center) / var(--hero-size, cover) no-repeat;
+        var(--hero-image, url("assets/hero/herobanner-01.png")) var(--hero-position, center center) / var(--hero-size, cover) no-repeat;
       transition: background .55s ease;
     }
 
@@ -575,9 +575,9 @@
     }
 
     .hero-actions .btn {
-      min-height: 52px;
-      padding: 0 28px;
-      font-size: 17px;
+      min-height: 56px;
+      padding: 0 32px;
+      font-size: 18px;
     }
 
     .hero-dots {
@@ -659,7 +659,10 @@
       letter-spacing: .02em;
     }
 
-    .category-section { background: #fff; }
+    .category-section {
+      background: #fff;
+      padding-top: 36px;
+    }
 
     .category-section .section-head {
       max-width: none;
@@ -709,6 +712,7 @@
       min-height: 100%;
       padding: 24px;
       align-content: end;
+      align-items: end;
     }
 
     .category-card.all-products .category-body h3 {
@@ -741,15 +745,15 @@
       background-repeat: no-repeat;
     }
 
-    .category-thumb.ppr { background-image: url("assets/products/manual/product-cate01-2.jpg"); }
+    .category-thumb.ppr { background-image: url("assets/products/manual/product-cate01.jpg"); }
     .category-thumb.clamp {
-      background-image: url("assets/products/manual/category-smart-clamp.jpg");
+      background-image: url("assets/products/manual/product-cate02.jpg");
     }
-    .category-thumb.hdpe { background-image: url("assets/products/manual/category-welding.jpg"); }
-    .category-thumb.grooved { background-image: url("assets/products/manual/category-grooved.jpg"); }
-    .category-thumb.heat { background-image: url("assets/products/manual/category-heat-exchanger.jpg"); }
-    .category-thumb.parts { background-image: url("assets/products/manual/category-pump-accessories.jpg"); }
-    .category-thumb.oem { background-image: url("assets/products/manual/category-ppr.jpg"); }
+    .category-thumb.hdpe { background-image: url("assets/products/manual/product-cate03.jpg"); }
+    .category-thumb.grooved { background-image: url("assets/products/manual/product-cate04.jpg"); }
+    .category-thumb.heat { background-image: url("assets/products/manual/product-cate06.jpg"); }
+    .category-thumb.parts { background-image: url("assets/products/manual/product-cate05.jpg"); }
+    .category-thumb.oem { background-image: url("assets/products/manual/product-cate07.jpg"); }
     .category-body {
       position: relative;
       z-index: 1;
@@ -811,7 +815,7 @@
     .about-section {
       background: #fff;
       padding-top: 44px;
-      padding-bottom: 70px;
+      padding-bottom: 28px;
     }
 
     .about-layout {
@@ -826,8 +830,8 @@
     .about-copy h2 {
       margin: 0;
       color: #0c1228;
-      font-size: clamp(30px, 3vw, 44px);
-      line-height: 1.2;
+      font-size: clamp(30px, 3.4vw, 48px);
+      line-height: 1.18;
       font-weight: 800;
     }
 
@@ -1057,6 +1061,7 @@
       line-height: 1.22;
       font-weight: 800;
       letter-spacing: -.015em;
+      text-wrap: balance;
       text-shadow: 0 2px 18px rgba(0, 0, 0, .32);
     }
 
@@ -1065,6 +1070,7 @@
       color: rgba(255, 255, 255, .84);
       font-size: 15px;
       line-height: 1.62;
+      text-wrap: pretty;
       text-shadow: 0 1px 10px rgba(0, 0, 0, .24);
     }
 
@@ -1423,35 +1429,30 @@
     }
 
     .news-card {
-      flex: 0 0 calc((100% - 36px) / 3);
+      flex: 0 0 calc((100% - 54px) / 4);
       display: block;
       overflow: hidden;
-      border: 1px solid var(--line);
-      border-radius: var(--radius);
-      background: #fff;
-      box-shadow: 0 8px 22px rgba(7, 18, 77, .05);
+      border: 0;
+      border-radius: 0;
+      background: transparent;
+      box-shadow: none;
       color: inherit;
       text-decoration: none;
       scroll-snap-align: start;
-      transition: transform .2s ease, box-shadow .2s ease;
     }
 
-    .news-card:hover {
-      transform: translateY(-4px);
-      box-shadow: 0 12px 28px rgba(7, 18, 77, .08);
-    }
     .news-image { height: 220px; background-size: cover; background-position: center; }
     .news-image.one { background-image: url("assets/articles/news-article-1.png"); }
     .news-image.two { background-image: url("assets/articles/news-article-2.png"); }
     .news-image.three { background-image: url("assets/articles/news-article-3.png"); }
-    .news-body { padding: 16px 18px 18px; }
+    .news-body { padding: 14px 0 0; }
     .date { color: var(--cyan); font-weight: 800; font-size: 12px; }
     .news-body h3 { margin: 8px 0 0; color: var(--navy); font-size: 18px; line-height: 1.32; }
     .news-body p { display: none; }
     .news-more { display: inline-flex; margin-top: 12px; color: var(--blue); font-weight: 800; font-size: 14px; }
 
     .news-controls {
-      margin-top: 10px;
+      margin-top: 32px;
       display: flex;
       align-items: center;
       justify-content: center;
@@ -1534,9 +1535,22 @@
       overflow-x: auto;
       overflow-y: visible;
       padding-bottom: 32px;
-      scroll-behavior: smooth;
+      scroll-behavior: auto;
       scroll-snap-type: x mandatory;
       scrollbar-width: none;
+      cursor: grab;
+      user-select: none;
+      -webkit-user-select: none;
+      touch-action: pan-x;
+    }
+
+    .featured-product-grid.is-dragging {
+      cursor: grabbing;
+      scroll-snap-type: none;
+    }
+
+    .featured-product-grid.is-dragging a.featured-product-card {
+      pointer-events: none;
     }
 
     .featured-product-grid::-webkit-scrollbar {
@@ -1544,52 +1558,17 @@
     }
 
     .featured-product-arrow {
-      position: absolute;
-      top: 50%;
-      z-index: 2;
-      width: 42px;
-      height: 42px;
-      display: grid;
-      place-items: center;
-      border: 1px solid var(--line);
-      border-radius: 999px;
-      background: #fff;
-      color: var(--navy);
-      cursor: pointer;
-      transform: translateY(-50%);
-      box-shadow: 0 12px 28px rgba(7, 18, 77, .12);
-      transition: .2s ease;
+      display: none;
     }
-
-    .featured-product-arrow:hover:not(:disabled) {
-      color: #fff;
-      background: var(--blue);
-      border-color: var(--blue);
-    }
-
-    .featured-product-arrow:disabled {
-      opacity: .35;
-      cursor: not-allowed;
-    }
-
-    .featured-product-arrow svg {
-      width: 18px;
-      height: 18px;
-      stroke-width: 2.4;
-    }
-
-    .featured-product-arrow.prev { left: -21px; }
-    .featured-product-arrow.next { right: -21px; }
 
     a.featured-product-card { color: inherit; text-decoration: none; }
     .featured-product-card {
-      cursor: pointer;
+      cursor: grab;
       overflow: hidden;
       border: 1px solid var(--line);
       border-radius: var(--radius);
       background: #fff;
       box-shadow: 0 12px 34px rgba(10, 45, 75, .06);
-      transition: .2s ease;
       display: flex;
       flex-direction: column;
       flex: 0 0 calc((100% - (var(--product-card-gap) * 3)) / 4);
@@ -1597,9 +1576,8 @@
       scroll-snap-align: start;
     }
 
-    .featured-product-card:hover {
-      transform: translateY(-4px);
-      box-shadow: var(--shadow);
+    .featured-product-grid.is-dragging .featured-product-card {
+      cursor: grabbing;
     }
 
     .featured-product-img {
@@ -1711,11 +1689,6 @@
       box-shadow: 0 2px 10px rgba(7, 18, 77, .04);
     }
 
-    .clearance-section .featured-product-card:hover {
-      transform: translateY(-2px);
-      box-shadow: 0 6px 16px rgba(7, 18, 77, .07);
-    }
-
     .clearance-section .section-head h2 {
       color: var(--navy);
     }
@@ -1739,31 +1712,8 @@
     }
 
     .clearance-section .featured-products-head .section-head h2 {
-      display: flex;
-      align-items: center;
-      gap: 10px;
-      font-size: clamp(24px, 2.8vw, 40px);
-      line-height: 1.2;
-    }
-
-    .clearance-title-icon {
-      display: inline-flex;
-      flex: 0 0 auto;
-      align-items: center;
-      justify-content: center;
-      animation: clearanceFireFlicker 1.6s ease-in-out infinite;
-    }
-
-    .clearance-title-icon img {
-      display: block;
-      width: clamp(26px, 2.4vw, 34px);
-      height: clamp(26px, 2.4vw, 34px);
-      filter: drop-shadow(0 0 8px rgba(244, 67, 54, .35));
-    }
-
-    @keyframes clearanceFireFlicker {
-      0%, 100% { transform: scale(1) translateY(0); }
-      50% { transform: scale(1.08) translateY(-1px); }
+      font-size: clamp(30px, 3.4vw, 48px);
+      line-height: 1.18;
     }
 
     .clearance-section .featured-products-head .btn {
@@ -2108,7 +2058,7 @@
       align-items: stretch;
     }
 
-    .contact-copy h2 { margin: 0; color: var(--navy); font-size: clamp(24px, 2.8vw, 36px); line-height: 1.2; }
+    .contact-copy h2 { margin: 0; color: var(--navy); font-size: clamp(26px, 2.8vw, 40px); line-height: 1.22; }
     .contact-copy p { margin: 16px 0 0; color: var(--muted); font-size: 18px; }
     .contact-lines {
       display: grid;
@@ -2214,8 +2164,8 @@
 
     .contact-cta__copy h2 {
       margin: 0;
-      font-size: clamp(24px, 2.8vw, 36px);
-      line-height: 1.18;
+      font-size: clamp(24px, 2.2vw, 32px);
+      line-height: 1.24;
       font-weight: 800;
     }
 
@@ -2369,6 +2319,34 @@
 
     .footer-brand p { margin: 0; line-height: 1.65; }
 
+    .footer-contact {
+      display: grid;
+      gap: 10px;
+      margin-top: 16px;
+    }
+    .footer-contact a {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      margin-top: 0;
+      width: fit-content;
+      color: rgba(255,255,255,.76);
+      font-size: 14px;
+      font-weight: 600;
+      line-height: 1.3;
+    }
+    .footer-contact a:hover { color: #fff; }
+    .footer-contact svg {
+      width: 16px;
+      height: 16px;
+      flex-shrink: 0;
+    }
+    .footer-contact svg:not([fill="currentColor"]) path,
+    .footer-contact svg[fill="none"] {
+      stroke-width: 1.9;
+    }
+
+
     .footer-social {
       display: flex;
       flex-wrap: wrap;
@@ -2450,8 +2428,156 @@
 
     .sticky-mobile a { flex: 1; }
 
+
+    .nav-toggle {
+      display: none;
+      width: 44px;
+      height: 44px;
+      flex: 0 0 auto;
+      place-items: center;
+      border: 1.2px solid rgba(36, 52, 159, .18);
+      border-radius: 12px;
+      background: #fff;
+      color: var(--blue);
+      cursor: pointer;
+      padding: 0;
+    }
+    .nav-toggle svg {
+      width: 22px;
+      height: 22px;
+      stroke-width: 2.2;
+    }
+    .nav-toggle__close { display: none; }
+    .topbar.is-nav-open .nav-toggle__open { display: none; }
+    .topbar.is-nav-open .nav-toggle__close { display: block; }
+
+    @media (min-width: 721px) and (max-width: 1080px) {
+      :root {
+        --container-gutter: 112px;
+      }
+      .nav {
+        --nav-gutter: 56px;
+      }
+      .hero-highlight:nth-child(-n+2)::before,
+      .hero-highlight:nth-child(3)::before,
+      .hero-highlight:nth-child(4)::before {
+        content: "";
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        height: 1px;
+        background: var(--line);
+      }
+      .hero-highlight:last-child {
+        grid-column: 1 / -1;
+      }
+    }
+
     @media (max-width: 1080px) {
-      .nav-menu { display: none; }
+      .hero-highlights {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        overflow: visible;
+      }
+      .hero-highlight {
+        min-width: 0;
+        flex: unset;
+      }
+      .hero-highlight strong,
+      .hero-highlight > div > span,
+      .hero-highlight small {
+        white-space: normal;
+      }
+      .hero-highlight:not(:last-child)::after { display: none; }
+      .hero-highlight:nth-child(odd):not(:last-child)::after { display: block; }
+      .hero-highlight:nth-child(-n+2)::before {
+        content: "";
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        height: 1px;
+        background: var(--line);
+      }
+      .nav-toggle { display: grid; }
+      .nav-actions {
+        margin-left: auto;
+        gap: 10px;
+      }
+      .nav-actions .line-cta,
+      .nav-actions .search-form,
+      .nav-actions .lang-switch {
+        display: none;
+      }
+      .nav-menu {
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        z-index: 60;
+        flex-direction: column;
+        align-items: stretch;
+        gap: 0;
+        margin: 0;
+        max-height: min(78vh, 680px);
+        overflow: auto;
+        padding: 8px 0 18px;
+        background: #fff;
+        border-bottom: 1px solid rgba(221, 229, 242, .95);
+        box-shadow: 0 24px 48px rgba(7, 18, 77, .12);
+        white-space: normal;
+        font-size: 16px;
+      }
+      .topbar.is-nav-open .nav-menu {
+        display: flex;
+      }
+      .nav-item {
+        min-height: 0;
+        display: block;
+        width: 100%;
+        border-top: 1px solid rgba(223, 230, 242, .9);
+      }
+      .nav-link {
+        width: 100%;
+        min-height: 48px;
+        padding: 12px var(--nav-gutter);
+        justify-content: space-between;
+      }
+      .nav-dropdown {
+        display: none;
+        position: static;
+        opacity: 1;
+        visibility: visible;
+        transform: none;
+        pointer-events: auto;
+        width: auto;
+        border: 0;
+        box-shadow: none;
+        background: #f6f8fc;
+        padding: 0 var(--nav-gutter) 14px calc(var(--nav-gutter) + 8px);
+      }
+      .nav-item.is-submenu-open .nav-dropdown {
+        display: block;
+      }
+      .nav-item.is-submenu-open > .nav-link svg {
+        transform: rotate(180deg);
+      }
+      .nav-link svg {
+        transition: transform .2s ease;
+      }
+      .nav-dropdown .dropdown-title { display: none; }
+      .nav-dropdown a {
+        min-height: 40px;
+        font-size: 15px;
+        font-weight: 600;
+      }
+      .nav-dropdown a + a { margin-top: 2px; }
+      body.is-nav-locked {
+        overflow: hidden;
+      }
+      /* keep other 1080 rules below */
       .category-section .section-head p { white-space: normal; }
       .about-layout, .contact-grid { grid-template-columns: 1fr; }
       .about-layout { gap: 34px; }
@@ -2476,10 +2602,24 @@
       .solution-intro {
         grid-column: 1;
         grid-row: 1;
-        width: min(440px, 88vw);
+        width: min(620px, 100%);
         min-height: auto;
+        margin-left: auto;
+        margin-right: auto;
         padding: 0 clamp(20px, 5vw, 28px);
+        text-align: center;
         pointer-events: auto;
+      }
+      .solution-intro .kicker {
+        justify-self: center;
+      }
+      .solution-intro p {
+        margin-left: auto;
+        margin-right: auto;
+      }
+      .solution-intro .btn {
+        margin-left: auto;
+        margin-right: auto;
       }
       .solution-intro .btn { margin-top: 28px; }
       .solution-cards-viewport {
@@ -2517,6 +2657,31 @@
       .contact-cta__actions { width: 100%; flex-wrap: wrap; }
       .contact-cta__card { flex: 1 1 220px; }
       .about-section { background-position: center; }
+      .contact-copy {
+        text-align: center;
+      }
+      .contact-copy p {
+        margin-left: auto;
+        margin-right: auto;
+      }
+      .contact-lines {
+        justify-items: center;
+      }
+      .contact-lines a {
+        justify-content: center;
+      }
+      .contact-line-btn {
+        margin-left: auto;
+        margin-right: auto;
+      }
+      .quote-form {
+        width: min(100%, 720px);
+        margin-left: auto;
+        margin-right: auto;
+      }
+      .form-actions {
+        justify-content: center;
+      }
     }
 
     @media (max-width: 720px) {
@@ -2533,12 +2698,36 @@
       .line-cta-label { display: none; }
       .account-link span { display: none; }
       .thai-flag { width: 22px; height: 22px; }
-      .hero { min-height: 560px; }
+      .hero {
+        min-height: 560px;
+        --hero-overlay-vertical: linear-gradient(180deg, rgba(7, 18, 77, .18) 0%, rgba(7, 18, 77, .24) 34%, rgba(7, 18, 77, .42) 70%, rgba(7, 18, 77, .62) 100%);
+        --hero-overlay-horizontal: linear-gradient(90deg, rgba(7, 18, 77, .5) 0%, rgba(7, 18, 77, .46) 36%, rgba(7, 18, 77, .4) 68%, rgba(7, 18, 77, .34) 100%);
+      }
       .hero { background-position: left top, right center; }
       .hero h1 { font-size: 32px; }
       .hero:not(.is-brand-slide) h1 { font-size: 34px; line-height: 1.24; }
       .hero.is-brand-slide h1 { font-size: 36px; }
-      .hero-inner { padding: 56px 0 24px; }
+      .hero-inner {
+        padding: 56px 0 24px;
+        justify-content: center;
+      }
+      .hero-copy {
+        width: 100%;
+        max-width: 100%;
+        margin: 0 auto;
+        text-align: center;
+      }
+      .hero .kicker {
+        justify-self: center;
+      }
+      .hero p {
+        margin-left: auto;
+        margin-right: auto;
+      }
+      .hero-actions {
+        justify-content: center;
+        align-items: center;
+      }
       .hero-highlights {
         display: grid;
         grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -2563,7 +2752,7 @@
       .news-section { padding: 44px 0 40px; }
       .featured-products-section { padding-bottom: 36px; }
       .clearance-section { padding-bottom: 36px; }
-      .news-body { padding: 14px 16px 16px; }
+      .news-body { padding: 12px 0 0; }
       .news-body h3 { font-size: 17px; }
       .category-grid, .form-grid { grid-template-columns: 1fr; }
       .featured-products-head {
@@ -2615,22 +2804,26 @@
       }
 
       .clearance-section .featured-products-head .section-head h2 {
-        font-size: clamp(20px, 4.8vw, 30px);
-        gap: 8px;
+        font-size: clamp(30px, 3.4vw, 48px);
         justify-content: center;
       }
 
-      .clearance-title-icon img {
-        width: clamp(22px, 5.2vw, 28px);
-        height: clamp(22px, 5.2vw, 28px);
-      }
       .featured-product-img { min-height: 240px; }
       .featured-product-card { flex-basis: 84%; }
       .featured-product-arrow.prev { left: 4px; }
       .featured-product-arrow.next { right: 4px; }
       .news-card { flex-basis: 84%; }
-      .portfolio-grid { gap: 12px; }
-      .portfolio-card { flex: 1 1 100%; }
+      .portfolio-grid { gap: 22px; }
+      .portfolio-card {
+        flex: 1 1 100%;
+        padding-bottom: 4px;
+      }
+      .portfolio-title {
+        margin-top: 16px;
+      }
+      .portfolio-more {
+        margin-top: 14px;
+      }
       .category-section .section-head {
         margin-left: auto;
         margin-right: auto;
@@ -2685,11 +2878,37 @@
         text-align: center;
       }
       .solution-intro h2 { font-size: 32px; }
+      .solution-intro p {
+        font-size: 16px;
+        line-height: 1.55;
+      }
       .solution-intro .btn {
         align-self: center;
+        width: auto;
+        max-width: 100%;
       }
-      .solution-card-body { padding: 20px; }
-      .solution-card { width: min(86vw, 400px); min-height: 420px; }
+      .solution-card-body { padding: 20px 18px 78px; }
+      .solution-card {
+        width: min(88vw, 360px);
+        min-height: 440px;
+      }
+      .solution-card h3 {
+        font-size: clamp(21px, 6vw, 28px);
+        line-height: 1.18;
+      }
+      .solution-card-desc {
+        margin-top: 10px;
+        font-size: 14px;
+        line-height: 1.55;
+      }
+      .solution-card-btn {
+        left: 18px;
+        right: 18px;
+        bottom: 22px;
+        width: calc(100% - 36px);
+        min-height: 42px;
+        padding: 0 14px;
+      }
       .video-section { padding: 58px 0 48px; }
       .video-head { gap: 16px; margin-bottom: 22px; }
       .video-track { --video-card-width: min(78vw, 440px); gap: 16px; padding-bottom: 44px; }
@@ -2746,6 +2965,9 @@
       .contact-cta__card-value {
         margin-top: 0;
         font-size: 16px;
+      }
+      .contact-grid {
+        grid-template-columns: 1fr;
       }
       .sticky-mobile { display: none; }
       .hero-actions .btn, .form-actions .btn { width: 100%; }
@@ -2894,99 +3116,106 @@
       </form>
     </div>
   </div>
-  <header class="topbar">
-    <div class="nav">
-      <a href="#" aria-label="Rano Tech home"><img class="brand-logo" src="assets/logo.png" alt="Rano Tech"></a>
-      <nav class="nav-menu" aria-label="เมนูหลัก">
-        <div class="nav-item"><a class="nav-link" href="#">หน้าแรก</a></div>
-        <div class="nav-item">
-          <a class="nav-link" href="about-history.html">เกี่ยวกับเรา <svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><path d="m6 9 6 6 6-6"/></svg></a>
-          <div class="nav-dropdown">
-            <span class="dropdown-title">เกี่ยวกับเรา</span>
-            <a href="about-history.html">ประวัติบริษัท</a>
-            <a href="quality-policy.html">นโยบายคุณภาพ</a>
-            <a href="technical-consulting.html">ปรึกษาทีมเทคนิค</a>
-            <a href="clients.html">ลูกค้าของเรา</a>
-            <a href="certificates.html">การรับรอง</a>
-            <a href="privacy-policy.html">นโยบายส่วนตัว</a>
+  <div id="siteHeader"></div>
+  <template id="siteHeaderFallback">
+    <header class="topbar">
+      <div class="nav">
+        <a href="#" aria-label="Rano Tech home"><img class="brand-logo" src="assets/logo.png" alt="Rano Tech"></a>
+        <nav class="nav-menu" id="primary-nav" aria-label="เมนูหลัก">
+          <div class="nav-item"><a class="nav-link" href="#">หน้าแรก</a></div>
+          <div class="nav-item">
+            <a class="nav-link" href="about-history.html">เกี่ยวกับเรา <svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><path d="m6 9 6 6 6-6"/></svg></a>
+            <div class="nav-dropdown">
+              <span class="dropdown-title">เกี่ยวกับเรา</span>
+              <a href="about-history.html">ประวัติบริษัท</a>
+              <a href="quality-policy.html">นโยบายคุณภาพ</a>
+              <a href="technical-consulting.html">ปรึกษาทีมเทคนิค</a>
+              <a href="clients.html">ลูกค้าของเรา</a>
+              <a href="certificates.html">การรับรอง</a>
+              <a href="privacy-policy.html">นโยบายส่วนตัว</a>
+            </div>
           </div>
-        </div>
-        <div class="nav-item">
-          <a class="nav-link" href="#products">สินค้า <svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><path d="m6 9 6 6 6-6"/></svg></a>
-          <div class="nav-dropdown">
-            <span class="dropdown-title">สินค้า</span>
-            <a href="products-ppr.html">ท่อและข้อต่อ PPR</a>
-            <a href="#products">แคล้มป์ซ่อมท่อรั่ว RNT Smart Clamp</a>
-            <a href="#products">เครื่องเชื่อมท่อ</a>
-            <a href="#products">Grooved Coupling และเครื่องมือ</a>
-            <a href="#products">Pump and Accessories</a>
-            <a href="#products">Heat Exchanger</a>
-            <a href="products-clearance.html">สินค้าโปรโมชั่น / Clearance</a>
+          <div class="nav-item">
+            <a class="nav-link" href="#products">สินค้า <svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><path d="m6 9 6 6 6-6"/></svg></a>
+            <div class="nav-dropdown">
+              <span class="dropdown-title">สินค้า</span>
+              <a href="products-ppr.html">ท่อและข้อต่อ PPR</a>
+              <a href="#products">แคล้มป์ซ่อมท่อรั่ว RNT Smart Clamp</a>
+              <a href="#products">เครื่องเชื่อมท่อ</a>
+              <a href="#products">Grooved Coupling และเครื่องมือ</a>
+              <a href="#products">Pump and Accessories</a>
+              <a href="#products">Heat Exchanger</a>
+              <a href="products-clearance.html">สินค้าโปรโมชั่น / Clearance</a>
+            </div>
           </div>
-        </div>
-        <div class="nav-item">
-          <a class="nav-link" href="#solutions">solution <svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><path d="m6 9 6 6 6-6"/></svg></a>
-          <div class="nav-dropdown">
-            <span class="dropdown-title">solution</span>
-            <a href="solution-heat-exchange.html">ระบบแลกเปลี่ยนความร้อน</a>
-            <a href="solution-cip.html">ระบบ CIP สำหรับอาหารและยา</a>
-            <a href="solution-pasteurization.html">ระบบ Pasteurization / UHT</a>
-            <a href="solution-solvent-recovery.html">ระบบ Solvent Recovery</a>
-            <a href="solution-reactor.html">ระบบ Reactor</a>
-            <a href="solution-gas-cooling.html">ระบบ Gas Cooling / Heating / Dehumidification</a>
+          <div class="nav-item">
+            <a class="nav-link" href="#solutions">สินค้าโซลูชัน <svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><path d="m6 9 6 6 6-6"/></svg></a>
+            <div class="nav-dropdown">
+              <span class="dropdown-title">สินค้าโซลูชัน</span>
+              <a href="solution-heat-exchange.html">ระบบแลกเปลี่ยนความร้อน</a>
+              <a href="solution-cip.html">ระบบ CIP สำหรับอาหารและยา</a>
+              <a href="solution-pasteurization.html">ระบบ Pasteurization / UHT</a>
+              <a href="solution-solvent-recovery.html">ระบบ Solvent Recovery</a>
+              <a href="solution-reactor.html">ระบบ Reactor</a>
+              <a href="solution-gas-cooling.html">ระบบ Gas Cooling / Heating / Dehumidification</a>
+              <a href="solution-thermal-application.html">Thermal Application อื่นๆ</a>
+            </div>
           </div>
-        </div>
-        <div class="nav-item">
-          <a class="nav-link" href="articles.html">บทความ <svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><path d="m6 9 6 6 6-6"/></svg></a>
-          <div class="nav-dropdown">
-            <span class="dropdown-title">ความรู้และบทความ</span>
-            <a href="articles.html">รวมบทความ</a>
-            <a href="manuals.html">คู่มือการใช้งาน</a>
-            <a href="videos.html">วิดีโอสาธิต</a>
-            <a href="faq.html">คำถามที่พบบ่อย</a>
-            <a href="news.html">ข่าวและกิจกรรม</a>
-            <a href="training.html">การอบรม / เวิร์กชอป</a>
-            <a href="gallery.html">แกลเลอรี</a>
+          <div class="nav-item">
+            <a class="nav-link" href="articles.html">บทความ <svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><path d="m6 9 6 6 6-6"/></svg></a>
+            <div class="nav-dropdown">
+              <span class="dropdown-title">ความรู้และบทความ</span>
+              <a href="articles.html">รวมบทความ</a>
+              <a href="manuals.html">คู่มือการใช้งาน</a>
+              <a href="videos.html">วิดีโอสาธิต</a>
+              <a href="faq.html">คำถามที่พบบ่อย</a>
+              <a href="news.html">ข่าวและกิจกรรม</a>
+              <a href="training.html">การอบรม / เวิร์กชอป</a>
+              <a href="gallery.html">แกลเลอรี</a>
+            </div>
           </div>
-        </div>
-        <div class="nav-item">
-          <a class="nav-link" href="contact.html">ติดต่อเรา <svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><path d="m6 9 6 6 6-6"/></svg></a>
-          <div class="nav-dropdown">
-            <span class="dropdown-title">ติดต่อเรา</span>
-            <a href="contact.html">ติดต่อเรา</a>
-            <a href="quote-form.html">แบบฟอร์มขอใบเสนอราคา</a>
-            <a href="product-inquiry.html">แบบฟอร์มสอบถามสินค้า</a>
-            <a href="careers.html">สมัครงาน</a>
+          <div class="nav-item">
+            <a class="nav-link" href="contact.html">ติดต่อเรา <svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><path d="m6 9 6 6 6-6"/></svg></a>
+            <div class="nav-dropdown">
+              <span class="dropdown-title">ติดต่อเรา</span>
+              <a href="contact.html">ติดต่อเรา</a>
+              <a href="customer-care.html">ฝ่ายดูแลลูกค้า</a>
+              <a href="product-inquiry.html">แบบฟอร์มสอบถามสินค้า</a>
+            </div>
           </div>
+        </nav>
+        <div class="nav-actions">
+          <a class="line-cta" href="https://page.line.me/gbc9543u" target="_blank" rel="noopener" aria-label="เพิ่มเพื่อน LINE @ranotech">
+            <span class="line-cta-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M19.365 9.863c.349 0 .63.285.63.631 0 .345-.281.63-.63.63H17.61v1.125h1.755c.349 0 .63.283.63.63 0 .344-.281.629-.63.629h-2.386c-.345 0-.627-.285-.627-.629V8.108c0-.345.282-.63.627-.63h2.386c.349 0 .63.285.63.63 0 .349-.281.63-.63.63H17.61v1.125h1.755zm-3.855 3.016c0 .27-.174.51-.432.596-.064.021-.133.031-.199.031-.211 0-.391-.09-.51-.25l-2.443-3.317v2.94c0 .344-.279.629-.631.629-.346 0-.626-.285-.626-.629V8.108c0-.27.173-.51.43-.595.06-.023.136-.033.194-.033.195 0 .375.104.495.254l2.462 3.33V8.108c0-.345.282-.63.63-.63.345 0 .63.285.63.63v4.771zm-5.741 0c0 .344-.282.629-.631.629-.345 0-.627-.285-.627-.629V8.108c0-.345.282-.63.627-.63.349 0 .631.285.631.63v4.771zm-2.466.629H4.917c-.345 0-.627-.285-.627-.629V8.108c0-.345.282-.63.627-.63.349 0 .63.285.63.63v4.141h1.756c.348 0 .629.283.629.63 0 .344-.281.629-.629.629M24 10.314C24 4.943 18.615.572 12 .572S0 4.943 0 10.314c0 4.811 4.27 8.842 10.035 9.608.391.082.923.258 1.058.59.12.301.086.766.062 1.08l-.164 1.02c-.045.301-.24 1.186 1.049.645 1.291-.539 6.916-4.078 9.436-6.975C23.176 14.393 24 12.458 24 10.314"/></svg>
+            </span>
+            <span class="line-cta-label">@ranotech</span>
+          </a>
+          <form class="search-form" action="#products" role="search">
+            <input type="search" name="q" placeholder="ค้นหา" aria-label="ค้นหา">
+            <button type="submit" aria-label="ค้นหา">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg>
+            </button>
+          </form>
+          <a class="cart-link" href="#" aria-label="รถเข็นสินค้า">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><circle cx="8" cy="21" r="1.5"/><circle cx="19" cy="21" r="1.5"/><path d="M2.5 3h2.2l2.6 12.2a2 2 0 0 0 2 1.6h8.9a2 2 0 0 0 1.9-1.4L22 7H6"/></svg>
+          </a>
+          <a class="account-link" href="#" aria-label="เข้าสู่ระบบ">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><circle cx="12" cy="7" r="4"/><path d="M4 21c0-4.4 3.6-8 8-8s8 3.6 8 8"/></svg>
+          </a>
+          <a class="lang-switch" href="#" aria-label="เลือกภาษา">
+            <span class="thai-flag" aria-hidden="true"></span>
+            <span>TH</span>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><path d="m6 9 6 6 6-6"/></svg>
+          </a>
         </div>
-      </nav>
-      <div class="nav-actions">
-        <a class="line-cta" href="https://page.line.me/gbc9543u" target="_blank" rel="noopener" aria-label="เพิ่มเพื่อน LINE @ranotech">
-          <span class="line-cta-icon" aria-hidden="true">
-            <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M19.365 9.863c.349 0 .63.285.63.631 0 .345-.281.63-.63.63H17.61v1.125h1.755c.349 0 .63.283.63.63 0 .344-.281.629-.63.629h-2.386c-.345 0-.627-.285-.627-.629V8.108c0-.345.282-.63.627-.63h2.386c.349 0 .63.285.63.63 0 .349-.281.63-.63.63H17.61v1.125h1.755zm-3.855 3.016c0 .27-.174.51-.432.596-.064.021-.133.031-.199.031-.211 0-.391-.09-.51-.25l-2.443-3.317v2.94c0 .344-.279.629-.631.629-.346 0-.626-.285-.626-.629V8.108c0-.27.173-.51.43-.595.06-.023.136-.033.194-.033.195 0 .375.104.495.254l2.462 3.33V8.108c0-.345.282-.63.63-.63.345 0 .63.285.63.63v4.771zm-5.741 0c0 .344-.282.629-.631.629-.345 0-.627-.285-.627-.629V8.108c0-.345.282-.63.627-.63.349 0 .631.285.631.63v4.771zm-2.466.629H4.917c-.345 0-.627-.285-.627-.629V8.108c0-.345.282-.63.627-.63.349 0 .63.285.63.63v4.141h1.756c.348 0 .629.283.629.63 0 .344-.281.629-.629.629M24 10.314C24 4.943 18.615.572 12 .572S0 4.943 0 10.314c0 4.811 4.27 8.842 10.035 9.608.391.082.923.258 1.058.59.12.301.086.766.062 1.08l-.164 1.02c-.045.301-.24 1.186 1.049.645 1.291-.539 6.916-4.078 9.436-6.975C23.176 14.393 24 12.458 24 10.314"/></svg>
-          </span>
-          <span class="line-cta-label">เพิ่มเพื่อน</span>
-        </a>
-        <form class="search-form" action="#products" role="search">
-          <input type="search" name="q" placeholder="ค้นหา" aria-label="ค้นหา">
-          <button type="submit" aria-label="ค้นหา">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg>
-          </button>
-        </form>
-        <a class="cart-link" href="#" aria-label="รถเข็นสินค้า">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><circle cx="8" cy="21" r="1.5"/><circle cx="19" cy="21" r="1.5"/><path d="M2.5 3h2.2l2.6 12.2a2 2 0 0 0 2 1.6h8.9a2 2 0 0 0 1.9-1.4L22 7H6"/></svg>
-        </a>
-        <a class="account-link" href="#" aria-label="เข้าสู่ระบบ">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><circle cx="12" cy="7" r="4"/><path d="M4 21c0-4.4 3.6-8 8-8s8 3.6 8 8"/></svg>
-        </a>
-        <a class="lang-switch" href="#" aria-label="เลือกภาษา">
-          <span class="thai-flag" aria-hidden="true"></span>
-          <span>TH</span>
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><path d="m6 9 6 6 6-6"/></svg>
-        </a>
+        <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="primary-nav" aria-label="เปิดเมนู">
+          <svg class="nav-toggle__open" viewBox="0 0 24 24" fill="none" stroke="currentColor" aria-hidden="true"><path d="M4 7h16"/><path d="M4 12h16"/><path d="M4 17h16"/></svg>
+          <svg class="nav-toggle__close" viewBox="0 0 24 24" fill="none" stroke="currentColor" aria-hidden="true"><path d="M6 6l12 12"/><path d="M18 6 6 18"/></svg>
+        </button>
       </div>
-    </div>
-  </header>
+    </header>
+  </template>
 
   <main>
     <div class="hero-stack">
@@ -3079,7 +3308,7 @@
             <a class="btn" href="about-history.html">เกี่ยวกับเรา</a>
           </div>
           <div class="about-detail">
-            <p>Rano Tech ให้บริการสินค้าและโซลูชันสำหรับระบบท่อ งานซ่อมบำรุง และงานแลกเปลี่ยนความร้อน ครอบคลุมท่อ PPR, แคล้มรัดท่อ, เครื่องเชื่อม PPR/HDPE, Grooved และ Heat Exchanger</p>
+            <p>Rano Tech ให้บริการสินค้าและโซลูชันสำหรับระบบท่อ งานซ่อมบำรุง และงานแลกเปลี่ยนความร้อน ครอบคลุมท่อ PPR, แคล้มป์รัดท่อ, เครื่องเชื่อม PPR/HDPE, Grooved และ Heat Exchanger</p>
             <p>เราช่วยลูกค้าตั้งแต่การเลือกสินค้าให้ตรงกับแรงดัน อุณหภูมิ และเงื่อนไขหน้างาน ไปจนถึงคำแนะนำสำหรับงานติดตั้งและซ่อมบำรุง เพื่อให้ทีมจัดซื้อและทีมวิศวกรตัดสินใจได้เร็วขึ้น</p>
             <a class="btn about-mobile-btn" href="about-history.html">เกี่ยวกับเรา</a>
             <div class="about-image" role="img" aria-label="ทีมงานและระบบท่ออุตสาหกรรม"></div>
@@ -3140,14 +3369,14 @@
       <div class="solution-sticky">
         <div class="solution-stage">
           <div class="solution-intro">
-              <p class="kicker">Solutions</p>
+              <p class="kicker">โซลูชัน</p>
               <h2>โซลูชันสำหรับ<br>ระบบอุตสาหกรรม</h2>
               <p>ครอบคลุมงานออกแบบ ติดตั้ง ระบบกู้คืนสาร และยูนิตกระบวนการผลิตเฉพาะทาง พร้อมทีมเทคนิคช่วยประเมินให้เหมาะกับหน้างานจริง</p>
               <a class="btn btn-primary" href="#contact">ดูโซลูชันทั้งหมด</a>
             </div>
             <div class="solution-cards-viewport">
               <div class="solution-track" id="solutionTrack">
-                <a class="solution-card" href="solution-heat-exchange.html" style="--solution-image: url('assets/solutions/solution-cooling-system.png')">
+                <a class="solution-card" href="solution-heat-exchange.html" style="--solution-image: url('assets/solutions/solution-cooling-system.jpg')">
                   <div class="solution-card-body">
                     <span class="solution-label">Heat Transfer</span>
                     <h3>ระบบแลกเปลี่ยนความร้อน</h3>
@@ -3155,7 +3384,7 @@
                     <span class="solution-card-btn">อ่านเพิ่มเติม</span>
                   </div>
                 </a>
-                <a class="solution-card" href="solution-cip.html" style="--solution-image: url('assets/solutions/cip/cip-unit.png')">
+                <a class="solution-card" href="solution-cip.html" style="--solution-image: url('assets/solutions/solution-cip-unit.jpg')">
                   <div class="solution-card-body">
                     <span class="solution-label">Clean Process</span>
                     <h3>ระบบ CIP สำหรับอาหารและยา</h3>
@@ -3163,7 +3392,7 @@
                     <span class="solution-card-btn">อ่านเพิ่มเติม</span>
                   </div>
                 </a>
-                <a class="solution-card" href="solution-pasteurization.html" style="--solution-image: url('assets/portfolio/pasteurization-uht-processing-system.png')">
+                <a class="solution-card" href="solution-pasteurization.html" style="--solution-image: url('assets/solutions/solution-pasteurization.jpg')">
                   <div class="solution-card-body">
                     <span class="solution-label">Thermal Process</span>
                     <h3>ระบบ Pasteurization / UHT</h3>
@@ -3171,7 +3400,7 @@
                     <span class="solution-card-btn">อ่านเพิ่มเติม</span>
                   </div>
                 </a>
-                <a class="solution-card" href="solution-solvent-recovery.html" style="--solution-image: url('assets/solutions/solution-solvent-recovery.png')">
+                <a class="solution-card" href="solution-solvent-recovery.html" style="--solution-image: url('assets/solutions/solution-solvent-recovery.jpg')">
                   <div class="solution-card-body">
                     <span class="solution-label">Recovery System</span>
                     <h3>ระบบ Solvent Recovery</h3>
@@ -3179,7 +3408,7 @@
                     <span class="solution-card-btn">อ่านเพิ่มเติม</span>
                   </div>
                 </a>
-                <a class="solution-card" href="solution-reactor.html" style="--solution-image: url('assets/solutions/solution-smart-reactor.png')">
+                <a class="solution-card" href="solution-reactor.html" style="--solution-image: url('assets/solutions/solution-reactor.jpg')">
                   <div class="solution-card-body">
                     <span class="solution-label">Process Solution</span>
                     <h3>ระบบ Reactor</h3>
@@ -3187,11 +3416,19 @@
                     <span class="solution-card-btn">อ่านเพิ่มเติม</span>
                   </div>
                 </a>
-                <a class="solution-card" href="solution-gas-cooling.html" style="--solution-image: url('assets/solutions/solution-bg.png')">
+                <a class="solution-card" href="solution-gas-cooling.html" style="--solution-image: url('assets/solutions/solution-gas.jpg')">
                   <div class="solution-card-body">
                     <span class="solution-label">Air &amp; Gas System</span>
                     <h3>ระบบ Gas Cooling / Heating / Dehumidification</h3>
                     <p class="solution-card-desc">ระบบควบคุมอุณหภูมิและความชื้นของก๊าซสำหรับงานอุตสาหกรรมเฉพาะทาง</p>
+                    <span class="solution-card-btn">อ่านเพิ่มเติม</span>
+                  </div>
+                </a>
+                <a class="solution-card" href="solution-thermal-application.html" style="--solution-image: url('assets/solutions/solution-thermal.jpg')">
+                  <div class="solution-card-body">
+                    <span class="solution-label">Thermal Application</span>
+                    <h3>Thermal Application อื่นๆ</h3>
+                    <p class="solution-card-desc">งานออกแบบและประยุกต์ใช้ระบบความร้อนเพิ่มเติมสำหรับกระบวนการผลิตและระบบอุตสาหกรรมเฉพาะทาง</p>
                     <span class="solution-card-btn">อ่านเพิ่มเติม</span>
                   </div>
                 </a>
@@ -3214,9 +3451,6 @@
           <a class="btn btn-primary" href="https://www.ranotech.com/products/" target="_blank" rel="noopener">ดูสินค้าทั้งหมด</a>
         </div>
         <div class="featured-product-carousel">
-          <button class="featured-product-arrow prev" type="button" aria-label="สินค้าก่อนหน้า" data-featured-product-prev>
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><path d="m15 18-6-6 6-6"/></svg>
-          </button>
           <div class="featured-product-grid" id="featuredProductTrack">
           <a class="featured-product-card" href="products-ppr-detail.html">
             <div class="featured-product-img product-photo ppr-reducer" role="img" aria-label="PPR EF Reducer">
@@ -3225,7 +3459,7 @@
             <div class="featured-product-body">
               <h3>PPR EF Reducer</h3>
               <div class="featured-product-footer">
-                <span class="featured-product-price">เริ่มต้น ฿680</span>
+                <span class="featured-product-price">฿680</span>
                 <span class="featured-product-cart-btn" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><circle cx="8" cy="21" r="1.5"/><circle cx="19" cy="21" r="1.5"/><path d="M2.5 3h2.2l2.6 12.2a2 2 0 0 0 2 1.6h8.9a2 2 0 0 0 1.9-1.4L22 7H6"/></svg></span>
               </div>
             </div>
@@ -3236,7 +3470,7 @@
             <div class="featured-product-body">
               <h3>DISMY EF Reducing TEE</h3>
               <div class="featured-product-footer">
-                <span class="featured-product-price">เริ่มต้น ฿850</span>
+                <span class="featured-product-price">฿850</span>
                 <span class="featured-product-cart-btn" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><circle cx="8" cy="21" r="1.5"/><circle cx="19" cy="21" r="1.5"/><path d="M2.5 3h2.2l2.6 12.2a2 2 0 0 0 2 1.6h8.9a2 2 0 0 0 1.9-1.4L22 7H6"/></svg></span>
               </div>
             </div>
@@ -3248,7 +3482,7 @@
             <div class="featured-product-body">
               <h3>PPR EF Flange Socket</h3>
               <div class="featured-product-footer">
-                <span class="featured-product-price">เริ่มต้น ฿1,250</span>
+                <span class="featured-product-price">฿1,250</span>
                 <span class="featured-product-cart-btn" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><circle cx="8" cy="21" r="1.5"/><circle cx="19" cy="21" r="1.5"/><path d="M2.5 3h2.2l2.6 12.2a2 2 0 0 0 2 1.6h8.9a2 2 0 0 0 1.9-1.4L22 7H6"/></svg></span>
               </div>
             </div>
@@ -3259,7 +3493,7 @@
             <div class="featured-product-body">
               <h3>PPR EF 45 ELBOW</h3>
               <div class="featured-product-footer">
-                <span class="featured-product-price">เริ่มต้น ฿120</span>
+                <span class="featured-product-price">฿120</span>
                 <span class="featured-product-cart-btn" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><circle cx="8" cy="21" r="1.5"/><circle cx="19" cy="21" r="1.5"/><path d="M2.5 3h2.2l2.6 12.2a2 2 0 0 0 2 1.6h8.9a2 2 0 0 0 1.9-1.4L22 7H6"/></svg></span>
               </div>
             </div>
@@ -3270,7 +3504,7 @@
             <div class="featured-product-body">
               <h3>Stop Valve</h3>
               <div class="featured-product-footer">
-                <span class="featured-product-price">เริ่มต้น ฿320</span>
+                <span class="featured-product-price">฿320</span>
                 <span class="featured-product-cart-btn" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><circle cx="8" cy="21" r="1.5"/><circle cx="19" cy="21" r="1.5"/><path d="M2.5 3h2.2l2.6 12.2a2 2 0 0 0 2 1.6h8.9a2 2 0 0 0 1.9-1.4L22 7H6"/></svg></span>
               </div>
             </div>
@@ -3282,15 +3516,12 @@
             <div class="featured-product-body">
               <h3>Single Union &amp; Female Threaded Ball Cock</h3>
               <div class="featured-product-footer">
-                <span class="featured-product-price">เริ่มต้น ฿450</span>
+                <span class="featured-product-price">฿450</span>
                 <span class="featured-product-cart-btn" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><circle cx="8" cy="21" r="1.5"/><circle cx="19" cy="21" r="1.5"/><path d="M2.5 3h2.2l2.6 12.2a2 2 0 0 0 2 1.6h8.9a2 2 0 0 0 1.9-1.4L22 7H6"/></svg></span>
               </div>
             </div>
           </a>
           </div>
-          <button class="featured-product-arrow next" type="button" aria-label="สินค้าถัดไป" data-featured-product-next>
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><path d="m9 18 6-6-6-6"/></svg>
-          </button>
         </div>
       </div>
     </section>
@@ -3300,19 +3531,11 @@
         <div class="featured-products-head">
           <div class="section-head align-left">
             <p class="kicker">Clearance</p>
-            <h2>
-              <span class="clearance-title-icon" aria-hidden="true">
-                <img src="assets/icons/discount.svg" alt="" width="34" height="34" decoding="async">
-              </span>
-              สินค้าลดราคา
-            </h2>
+            <h2>สินค้าลดราคา</h2>
           </div>
           <a class="btn btn-primary" href="products-clearance.html">ดูสินค้าลดราคาทั้งหมด</a>
         </div>
         <div class="featured-product-carousel">
-          <button class="featured-product-arrow prev" type="button" aria-label="สินค้าลดราคาก่อนหน้า" data-clearance-product-prev>
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><path d="m15 18-6-6 6-6"/></svg>
-          </button>
           <div class="featured-product-grid" id="clearanceProductTrack">
             <a class="featured-product-card" href="products-ppr-detail.html">
               <div class="featured-product-img product-photo ppr-elbow-45" role="img" aria-label="PPR EF 45 ELBOW">
@@ -3374,10 +3597,37 @@
                 </div>
               </div>
             </a>
+            <a class="featured-product-card" href="products-ppr-detail.html">
+              <div class="featured-product-img product-photo ppr-reducing-tee" role="img" aria-label="DISMY EF Reducing TEE">
+                <div class="featured-product-labels"><span class="product-tag product-tag-sale">ลด 20%</span></div>
+              </div>
+              <div class="featured-product-body">
+                <h3>DISMY EF Reducing TEE</h3>
+                <div class="featured-product-footer">
+                  <div class="featured-product-prices">
+                    <span class="featured-product-price-old">฿850</span>
+                    <span class="featured-product-price-sale">฿680</span>
+                  </div>
+                  <span class="featured-product-cart-btn" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><circle cx="8" cy="21" r="1.5"/><circle cx="19" cy="21" r="1.5"/><path d="M2.5 3h2.2l2.6 12.2a2 2 0 0 0 2 1.6h8.9a2 2 0 0 0 1.9-1.4L22 7H6"/></svg></span>
+                </div>
+              </div>
+            </a>
+            <a class="featured-product-card" href="products-ppr-detail.html">
+              <div class="featured-product-img product-photo ppr-flange" role="img" aria-label="PPR EF Flange Socket">
+                <div class="featured-product-labels"><span class="product-tag product-tag-sale">Clearance</span></div>
+              </div>
+              <div class="featured-product-body">
+                <h3>PPR EF Flange Socket</h3>
+                <div class="featured-product-footer">
+                  <div class="featured-product-prices">
+                    <span class="featured-product-price-old">฿1,250</span>
+                    <span class="featured-product-price-sale">฿999</span>
+                  </div>
+                  <span class="featured-product-cart-btn" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><circle cx="8" cy="21" r="1.5"/><circle cx="19" cy="21" r="1.5"/><path d="M2.5 3h2.2l2.6 12.2a2 2 0 0 0 2 1.6h8.9a2 2 0 0 0 1.9-1.4L22 7H6"/></svg></span>
+                </div>
+              </div>
+            </a>
           </div>
-          <button class="featured-product-arrow next" type="button" aria-label="สินค้าลดราคาถัดไป" data-clearance-product-next>
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><path d="m9 18 6-6-6-6"/></svg>
-          </button>
         </div>
       </div>
     </section>
@@ -3517,7 +3767,7 @@
             </a>
             <a class="contact-line-btn" href="https://page.line.me/gbc9543u" target="_blank" rel="noopener">
               <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M19.365 9.863c.349 0 .63.285.63.631 0 .345-.281.63-.63.63H17.61v1.125h1.755c.349 0 .63.283.63.63 0 .344-.281.629-.63.629h-2.386c-.345 0-.627-.285-.627-.629V8.108c0-.345.282-.63.627-.63h2.386c.349 0 .63.285.63.63 0 .349-.281.63-.63.63H17.61v1.125h1.755zm-3.855 3.016c0 .27-.174.51-.432.596-.064.021-.133.031-.199.031-.211 0-.391-.09-.51-.25l-2.443-3.317v2.94c0 .344-.279.629-.631.629-.346 0-.626-.285-.626-.629V8.108c0-.27.173-.51.43-.595.06-.023.136-.033.194-.033.195 0 .375.104.495.254l2.462 3.33V8.108c0-.345.282-.63.63-.63.345 0 .63.285.63.63v4.771zm-5.741 0c0 .344-.282.629-.631.629-.345 0-.627-.285-.627-.629V8.108c0-.345.282-.63.627-.63.349 0 .631.285.631.63v4.771zm-2.466.629H4.917c-.345 0-.627-.285-.627-.629V8.108c0-.345.282-.63.627-.63.349 0 .631.285.631.63v4.141h1.756c.348 0 .629.283.629.63 0 .344-.281.629-.629.629M24 10.314C24 4.943 18.615.572 12 .572S0 4.943 0 10.314c0 4.811 4.27 8.842 10.035 9.608.391.082.923.258 1.058.59.12.301.086.766.062 1.08l-.164 1.02c-.045.301-.24 1.186 1.049.645 1.291-.539 6.916-4.078 9.436-6.975C23.176 14.393 24 12.458 24 10.314"/></svg>
-              แอด LINE @ranotech
+              @ranotech
             </a>
           </div>
         </div>
@@ -3528,7 +3778,7 @@
             <input class="field" type="text" placeholder="ชื่อบริษัท">
             <input class="field" type="text" placeholder="ตำแหน่ง">
             <input class="field" type="email" placeholder="อีเมล">
-            <select class="field"><option>เลือกสินค้าที่สนใจ</option><option>ท่อ PPR</option><option>Smart Clamp</option><option>เครื่องเชื่อม HDPE</option><option>Heat Exchanger</option></select>
+            <select class="field"><option>เลือกสินค้าที่สนใจ</option><option>ท่อและข้อต่อ PPR</option><option>แคล้มป์ซ่อมท่อรั่ว RNT Smart Clamp</option><option>เครื่องเชื่อมท่อ</option><option>Grooved Coupling และเครื่องมือ</option><option>Pump and Accessories</option><option>Heat Exchanger</option><option>สินค้าโปรโมชั่น / Clearance</option></select>
             <textarea class="field" placeholder="รายละเอียดหน้างาน เช่น ขนาดท่อ แรงดัน อุณหภูมิ หรือวันที่ต้องการใช้งาน"></textarea>
           </div>
           <div class="form-actions">
@@ -3573,83 +3823,135 @@
     </section>
   </main>
 
-  <footer class="footer">
-    <div class="container">
-      <div class="footer-grid">
-        <div class="footer-brand">
-          <a class="footer-logo-link" href="#" aria-label="Rano Tech home"><img class="footer-logo" src="assets/logo.png" alt="Rano Tech"></a>
-          <h3>Rano Tech Co., Ltd.</h3>
-          <p>ผู้เชี่ยวชาญด้านระบบท่อ อุปกรณ์ซ่อมท่อ และระบบแลกเปลี่ยนความร้อนสำหรับงานอุตสาหกรรม</p>
-          <div class="footer-social" aria-label="โซเชียลมีเดีย">
-            <a href="https://page.line.me/gbc9543u" target="_blank" rel="noopener" aria-label="LINE @ranotech">
-              <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M19.365 9.863c.349 0 .63.285.63.631 0 .345-.281.63-.63.63H17.61v1.125h1.755c.349 0 .63.283.63.63 0 .344-.281.629-.63.629h-2.386c-.345 0-.627-.285-.627-.629V8.108c0-.345.282-.63.627-.63h2.386c.349 0 .63.285.63.63 0 .349-.281.63-.63.63H17.61v1.125h1.755zm-3.855 3.016c0 .27-.174.51-.432.596-.064.021-.133.031-.199.031-.211 0-.391-.09-.51-.25l-2.443-3.317v2.94c0 .344-.279.629-.631.629-.346 0-.626-.285-.626-.629V8.108c0-.27.173-.51.43-.595.06-.023.136-.033.194-.033.195 0 .375.104.495.254l2.462 3.33V8.108c0-.345.282-.63.63-.63.345 0 .63.285.63.63v4.771zm-5.741 0c0 .344-.282.629-.631.629-.345 0-.627-.285-.627-.629V8.108c0-.345.282-.63.627-.63.349 0 .631.285.631.63v4.771zm-2.466.629H4.917c-.345 0-.627-.285-.627-.629V8.108c0-.345.282-.63.627-.63.349 0 .63.285.631.63v4.141h1.756c.348 0 .629.283.629.63 0 .344-.281.629-.629.629M24 10.314C24 4.943 18.615.572 12 .572S0 4.943 0 10.314c0 4.811 4.27 8.842 10.035 9.608.391.082.923.258 1.058.59.12.301.086.766.062 1.08l-.164 1.02c-.045.301-.24 1.186 1.049.645 1.291-.539 6.916-4.078 9.436-6.975C23.176 14.393 24 12.458 24 10.314"/></svg>
-            </a>
-            <a href="https://www.facebook.com/ranotech" target="_blank" rel="noopener" aria-label="Facebook Rano Tech">
-              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M24 12.073C24 5.405 18.627 0 12 0S0 5.405 0 12.073C0 18.1 4.388 23.094 10.125 24v-8.437H7.078v-3.49h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.49h-2.796V24C19.612 23.094 24 18.1 24 12.073z"/></svg>
-            </a>
-            <a href="https://www.youtube.com/results?search_query=Rano+Tech" target="_blank" rel="noopener" aria-label="YouTube Rano Tech">
-              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
-            </a>
-            <a href="https://www.tiktok.com/@ranotech" target="_blank" rel="noopener" aria-label="TikTok Rano Tech">
-              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-2.88 2.5 2.89 2.89 0 0 1-2.89-2.89 2.89 2.89 0 0 1 2.89-2.89c.28 0 .54.04.79.1V9.01a6.27 6.27 0 0 0-.79-.05 6.34 6.34 0 0 0-6.34 6.34 6.34 6.34 0 0 0 6.34 6.34 6.34 6.34 0 0 0 6.33-6.34V8.69a8.18 8.18 0 0 0 4.78 1.52V6.76a4.85 4.85 0 0 1-1.01-.07z"/></svg>
-            </a>
+  <div id="siteFooter"></div>
+  <template id="siteFooterFallback">
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-grid">
+          <div class="footer-brand">
+            <a class="footer-logo-link" href="#" aria-label="Rano Tech home"><img class="footer-logo" src="assets/logo.png" alt="Rano Tech"></a>
+            <h3>Rano Tech Co., Ltd.</h3>
+            <p>ผู้เชี่ยวชาญด้านระบบท่อ อุปกรณ์ซ่อมท่อ และระบบแลกเปลี่ยนความร้อนสำหรับงานอุตสาหกรรม</p>
+            <div class="footer-contact" aria-label="ข้อมูลติดต่อ">
+              <a href="tel:0859410072">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+                <span>085 941 0072</span>
+              </a>
+              <a href="mailto:ranotech@gmail.com">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg>
+                <span>ranotech@gmail.com</span>
+              </a>
+              <a href="https://page.line.me/gbc9543u" target="_blank" rel="noopener">
+                <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M19.365 9.863c.349 0 .63.285.63.631 0 .345-.281.63-.63.63H17.61v1.125h1.755c.349 0 .63.283.63.63 0 .344-.281.629-.63.629h-2.386c-.345 0-.627-.285-.627-.629V8.108c0-.345.282-.63.627-.63h2.386c.349 0 .63.285.63.63 0 .349-.281.63-.63.63H17.61v1.125h1.755zm-3.855 3.016c0 .27-.174.51-.432.596-.064.021-.133.031-.199.031-.211 0-.391-.09-.51-.25l-2.443-3.317v2.94c0 .344-.279.629-.631.629-.346 0-.626-.285-.626-.629V8.108c0-.27.173-.51.43-.595.06-.023.136-.033.194-.033.195 0 .375.104.495.254l2.462 3.33V8.108c0-.345.282-.63.63-.63.345 0 .63.285.63.63v4.771zm-5.741 0c0 .344-.282.629-.631.629-.345 0-.627-.285-.627-.629V8.108c0-.345.282-.63.627-.63.349 0 .631.285.631.63v4.771zm-2.466.629H4.917c-.345 0-.627-.285-.627-.629V8.108c0-.345.282-.63.627-.63.349 0 .63.285.631.63v4.141h1.756c.348 0 .629.283.629.63 0 .344-.281.629-.629.629M24 10.314C24 4.943 18.615.572 12 .572S0 4.943 0 10.314c0 4.811 4.27 8.842 10.035 9.608.391.082.923.258 1.058.59.12.301.086.766.062 1.08l-.164 1.02c-.045.301-.24 1.186 1.049.645 1.291-.539 6.916-4.078 9.436-6.975C23.176 14.393 24 12.458 24 10.314"/></svg>
+                <span>LINE @ranotech</span>
+              </a>
+            </div>
+            <div class="footer-social" aria-label="โซเชียลมีเดีย">
+              <a href="https://page.line.me/gbc9543u" target="_blank" rel="noopener" aria-label="LINE @ranotech"><svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M19.365 9.863c.349 0 .63.285.63.631 0 .345-.281.63-.63.63H17.61v1.125h1.755c.349 0 .63.283.63.63 0 .344-.281.629-.63.629h-2.386c-.345 0-.627-.285-.627-.629V8.108c0-.345.282-.63.627-.63h2.386c.349 0 .63.285.63.63 0 .349-.281.63-.63.63H17.61v1.125h1.755zm-3.855 3.016c0 .27-.174.51-.432.596-.064.021-.133.031-.199.031-.211 0-.391-.09-.51-.25l-2.443-3.317v2.94c0 .344-.279.629-.631.629-.346 0-.626-.285-.626-.629V8.108c0-.27.173-.51.43-.595.06-.023.136-.033.194-.033.195 0 .375.104.495.254l2.462 3.33V8.108c0-.345.282-.63.63-.63.345 0 .63.285.63.63v4.771zm-5.741 0c0 .344-.282.629-.631.629-.345 0-.627-.285-.627-.629V8.108c0-.345.282-.63.627-.63.349 0 .631.285.631.63v4.771zm-2.466.629H4.917c-.345 0-.627-.285-.627-.629V8.108c0-.345.282-.63.627-.63.349 0 .63.285.631.63v4.141h1.756c.348 0 .629.283.629.63 0 .344-.281.629-.629.629M24 10.314C24 4.943 18.615.572 12 .572S0 4.943 0 10.314c0 4.811 4.27 8.842 10.035 9.608.391.082.923.258 1.058.59.12.301.086.766.062 1.08l-.164 1.02c-.045.301-.24 1.186 1.049.645 1.291-.539 6.916-4.078 9.436-6.975C23.176 14.393 24 12.458 24 10.314"/></svg></a>
+              <a href="https://www.facebook.com/ranotech" target="_blank" rel="noopener" aria-label="Facebook Rano Tech"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M24 12.073C24 5.405 18.627 0 12 0S0 5.405 0 12.073C0 18.1 4.388 23.094 10.125 24v-8.437H7.078v-3.49h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.49h-2.796V24C19.612 23.094 24 18.1 24 12.073z"/></svg></a>
+              <a href="https://www.youtube.com/results?search_query=Rano+Tech" target="_blank" rel="noopener" aria-label="YouTube Rano Tech"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg></a>
+              <a href="https://www.linkedin.com/organization-guest/company/rano-tech?challengeId=AQGjZtNj0RI8LwAAAXM4mZXAwooz56UhiEyIfVaU_m3yXZKjubufHM9Pk2pQoMOZo-yhxBNG_qFeW0c19_yTFnukMu4ga0fpng&#038;submissionId=b2adc17c-6562-2016-d717-bc81486de739" target="_blank" rel="noopener" aria-label="LinkedIn Rano Tech"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.447-2.136 2.942v5.664H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.063 2.063 0 1 1 0-4.126 2.063 2.063 0 0 1 0 4.126zM7.119 20.452H3.554V9h3.565v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.226.792 24 1.771 24h20.451C23.2 24 24 23.226 24 22.271V1.729C24 .774 23.2 0 22.225 0z"/></svg></a>
+              <a href="https://www.tiktok.com/@ranotechth" target="_blank" rel="noopener" aria-label="TikTok Rano Tech"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-2.88 2.5 2.89 2.89 0 0 1-2.89-2.89 2.89 2.89 0 0 1 2.89-2.89c.28 0 .54.04.79.1V9.01a6.27 6.27 0 0 0-.79-.05 6.34 6.34 0 0 0-6.34 6.34 6.34 6.34 0 0 0 6.34 6.34 6.34 6.34 0 0 0 6.33-6.34V8.69a8.18 8.18 0 0 0 4.78 1.52V6.76a4.85 4.85 0 0 1-1.01-.07z"/></svg></a>
+            </div>
+          </div>
+          <div class="footer-col">
+            <h3>เมนูหลัก</h3>
+            <a href="#">หน้าแรก</a>
+            <a href="about-history.html">เกี่ยวกับเรา</a>
+            <a href="#products">สินค้า</a>
+            <a href="#solutions">สินค้าโซลูชัน</a>
+            <a href="articles.html">บทความ</a>
+            <a href="contact.html">ติดต่อเรา</a>
+          </div>
+          <div class="footer-col">
+            <h3>สินค้า</h3>
+            <a href="products-ppr.html">ท่อและข้อต่อ PPR</a>
+            <a href="#products">แคล้มป์ซ่อมท่อรั่ว RNT Smart Clamp</a>
+            <a href="#products">เครื่องเชื่อมท่อ</a>
+            <a href="#products">Grooved Coupling และเครื่องมือ</a>
+            <a href="#products">Pump and Accessories</a>
+            <a href="#products">Heat Exchanger</a>
+            <a href="products-clearance.html">สินค้าโปรโมชั่น / Clearance</a>
+          </div>
+          <div class="footer-col">
+            <h3>สินค้าโซลูชัน</h3>
+            <a href="solution-heat-exchange.html">ระบบแลกเปลี่ยนความร้อน</a>
+            <a href="solution-cip.html">ระบบ CIP สำหรับอาหารและยา</a>
+            <a href="solution-pasteurization.html">ระบบ Pasteurization / UHT</a>
+            <a href="solution-solvent-recovery.html">ระบบ Solvent Recovery</a>
+            <a href="solution-reactor.html">ระบบ Reactor</a>
+            <a href="solution-gas-cooling.html">ระบบ Gas Cooling / Heating / Dehumidification</a>
+            <a href="solution-thermal-application.html">Thermal Application อื่นๆ</a>
           </div>
         </div>
-        <div class="footer-col">
-          <h3>เมนูหลัก</h3>
-          <a href="#">หน้าแรก</a>
-          <a href="about-history.html">เกี่ยวกับเรา</a>
-          <a href="#products">สินค้า</a>
-          <a href="#solutions">solution</a>
-          <a href="articles.html">บทความ</a>
-          <a href="contact.html">ติดต่อเรา</a>
-        </div>
-        <div class="footer-col">
-          <h3>สินค้า</h3>
-          <a href="products-ppr.html">ท่อและข้อต่อ PPR</a>
-          <a href="#products">แคล้มป์ซ่อมท่อรั่ว RNT Smart Clamp</a>
-          <a href="#products">เครื่องเชื่อมท่อ</a>
-          <a href="#products">Grooved Coupling และเครื่องมือ</a>
-          <a href="#products">Pump and Accessories</a>
-          <a href="#products">Heat Exchanger</a>
-          <a href="products-clearance.html">สินค้าโปรโมชั่น / Clearance</a>
-        </div>
-        <div class="footer-col">
-          <h3>ติดต่อเรา</h3>
-          <a href="tel:0859410072">085 941 0072</a>
-          <a href="mailto:ranotech@gmail.com">ranotech@gmail.com</a>
-          <a href="https://page.line.me/gbc9543u" target="_blank" rel="noopener">LINE @ranotech</a>
+        <div class="footer-bottom">
+          <span>© 2026 Rano Tech Co., Ltd. All rights reserved.</span>
+          <div class="footer-legal">
+            <a href="privacy-policy.html">นโยบายความเป็นส่วนตัว</a>
+            <a href="quality-policy.html">นโยบายคุณภาพ</a>
+          </div>
         </div>
       </div>
-      <div class="footer-bottom">
-        <span>© 2026 Rano Tech Co., Ltd. All rights reserved.</span>
-        <div class="footer-legal">
-          <a href="privacy-policy.html">นโยบายความเป็นส่วนตัว</a>
-          <a href="quality-policy.html">นโยบายคุณภาพ</a>
-        </div>
-      </div>
-    </div>
-  </footer>
+    </footer>
+  </template>
 
   <div class="sticky-mobile">
     <a class="btn btn-primary" href="tel:0859410072">โทร</a>
     <a class="btn btn-amber" href="https://page.line.me/gbc9543u" target="_blank" rel="noopener">LINE</a>
   </div>
   <script>
+    window.homeLayoutReady = (async function () {
+      function applyFallback(targetId, templateId) {
+        const target = document.getElementById(targetId);
+        const template = document.getElementById(templateId);
+        if (!target || !template) return;
+        target.innerHTML = template.innerHTML;
+      }
+
+      async function loadFragment(targetId, filePath) {
+        const target = document.getElementById(targetId);
+        if (!target) return;
+        const response = await fetch(filePath, { cache: "no-store" });
+        if (!response.ok) {
+          throw new Error("Unable to load fragment: " + filePath);
+        }
+        target.innerHTML = await response.text();
+      }
+
+      try {
+        if (window.location.protocol === "file:") {
+          throw new Error("Fetch is unavailable for file protocol");
+        }
+        await Promise.all([
+          loadFragment("siteHeader", "partials/home-header.html"),
+          loadFragment("siteFooter", "partials/home-footer.html")
+        ]);
+      } catch (error) {
+        applyFallback("siteHeader", "siteHeaderFallback");
+        applyFallback("siteFooter", "siteFooterFallback");
+      }
+    })();
+  </script>
+
+  <script>
     const heroOverlayPresets = {
       brand: {
         vertical: "linear-gradient(180deg, rgba(7, 18, 77, 0) 0%, rgba(7, 18, 77, 0) 50%, rgba(7, 18, 77, .48) 80%, rgba(7, 18, 77, .75) 100%)",
-        horizontal: "linear-gradient(90deg, rgba(7, 18, 77, .97) 0%, rgba(7, 18, 77, .9) 26%, rgba(7, 18, 77, .72) 40%, rgba(7, 18, 77, .34) 48%, rgba(7, 18, 77, .08) 54%, rgba(7, 18, 77, 0) 58%)"
+        horizontal: "linear-gradient(90deg, rgba(7, 18, 77, .97) 0%, rgba(7, 18, 77, .9) 26%, rgba(7, 18, 77, .72) 40%, rgba(7, 18, 77, .34) 48%, rgba(7, 18, 77, .08) 54%, rgba(7, 18, 77, 0) 58%)",
+        mobileVertical: "linear-gradient(180deg, rgba(7, 18, 77, .18) 0%, rgba(7, 18, 77, .24) 34%, rgba(7, 18, 77, .42) 70%, rgba(7, 18, 77, .62) 100%)",
+        mobileHorizontal: "linear-gradient(90deg, rgba(7, 18, 77, .52) 0%, rgba(7, 18, 77, .48) 36%, rgba(7, 18, 77, .42) 68%, rgba(7, 18, 77, .36) 100%)"
       },
       product: {
         vertical: "linear-gradient(180deg, rgba(7, 18, 77, 0) 0%, rgba(7, 18, 77, 0) 52%, rgba(7, 18, 77, .42) 84%, rgba(7, 18, 77, .62) 100%)",
-        horizontal: "linear-gradient(90deg, rgba(7, 18, 77, .84) 0%, rgba(7, 18, 77, .62) 30%, rgba(7, 18, 77, .2) 48%, rgba(7, 18, 77, 0) 58%)"
+        horizontal: "linear-gradient(90deg, rgba(7, 18, 77, .84) 0%, rgba(7, 18, 77, .62) 30%, rgba(7, 18, 77, .2) 48%, rgba(7, 18, 77, 0) 58%)",
+        mobileVertical: "linear-gradient(180deg, rgba(7, 18, 77, .18) 0%, rgba(7, 18, 77, .24) 34%, rgba(7, 18, 77, .42) 70%, rgba(7, 18, 77, .62) 100%)",
+        mobileHorizontal: "linear-gradient(90deg, rgba(7, 18, 77, .5) 0%, rgba(7, 18, 77, .46) 36%, rgba(7, 18, 77, .4) 68%, rgba(7, 18, 77, .34) 100%)"
       }
     };
 
     const heroSlides = [
       {
-        image: "assets/hero/banner-factory02.jpg",
+        image: "assets/hero/herobanner-01.png",
         position: "center center",
         size: "cover",
         overlay: "brand",
@@ -3661,7 +3963,7 @@
         position: "right center",
         size: "cover",
         overlay: "product",
-        title: "ร้านขายท่อ PPR<br>แคล้มรัดท่อและ<br>เครื่องเชื่อมท่อ PPR, HDPE",
+        title: "ร้านขายท่อ PPR<br>แคล้มป์รัดท่อและ<br>เครื่องเชื่อมท่อ PPR, HDPE",
         subtitle: "สต๊อกพร้อมส่ง พร้อมทีมเทคนิคช่วยแนะนำสเปกให้เหมาะกับหน้างาน"
       },
       {
@@ -3669,7 +3971,7 @@
         position: "right center",
         size: "cover",
         overlay: "product",
-        title: "ร้านขายท่อ PPR<br>แคล้มรัดท่อและ<br>เครื่องเชื่อมท่อ PPR, HDPE",
+        title: "ร้านขายท่อ PPR<br>แคล้มป์รัดท่อและ<br>เครื่องเชื่อมท่อ PPR, HDPE",
         subtitle: "สต๊อกพร้อมส่ง พร้อมทีมเทคนิคช่วยแนะนำสเปกให้เหมาะกับหน้างาน"
       },
       {
@@ -3678,7 +3980,7 @@
         size: "cover",
         overlay: "product",
         overlayHorizontal: "linear-gradient(90deg, rgba(7, 18, 77, .97) 0%, rgba(7, 18, 77, .92) 26%, rgba(7, 18, 77, .78) 38%, rgba(7, 18, 77, .45) 48%, rgba(7, 18, 77, .12) 54%, rgba(7, 18, 77, 0) 58%)",
-        title: "ร้านขายท่อ PPR<br>แคล้มรัดท่อและ<br>เครื่องเชื่อมท่อ PPR, HDPE",
+        title: "ร้านขายท่อ PPR<br>แคล้มป์รัดท่อและ<br>เครื่องเชื่อมท่อ PPR, HDPE",
         subtitle: "สต๊อกพร้อมส่ง พร้อมทีมเทคนิคช่วยแนะนำสเปกให้เหมาะกับหน้างาน"
       },
       {
@@ -3686,7 +3988,7 @@
         position: "right center",
         size: "cover",
         overlay: "product",
-        title: "ร้านขายท่อ PPR<br>แคล้มรัดท่อและ<br>เครื่องเชื่อมท่อ PPR, HDPE",
+        title: "ร้านขายท่อ PPR<br>แคล้มป์รัดท่อและ<br>เครื่องเชื่อมท่อ PPR, HDPE",
         subtitle: "สต๊อกพร้อมส่ง พร้อมทีมเทคนิคช่วยแนะนำสเปกให้เหมาะกับหน้างาน"
       }
     ];
@@ -3696,14 +3998,20 @@
     const heroDots = document.getElementById("heroDots");
     const heroPrev = document.querySelector("[data-hero-prev]");
     const heroNext = document.querySelector("[data-hero-next]");
+    const heroMobileOverlayQuery = window.matchMedia("(max-width: 720px)");
     let heroIndex = 0;
     let heroTimer;
     const heroAutoplayEnabled = true;
 
     function applyHeroOverlay(slide) {
       const preset = heroOverlayPresets[slide.overlay] || heroOverlayPresets.product;
-      const overlayVertical = slide.overlayVertical || preset.vertical;
-      const overlayHorizontal = slide.overlayHorizontal || preset.horizontal;
+      const isMobileHero = heroMobileOverlayQuery.matches;
+      const overlayVertical = isMobileHero
+        ? (slide.mobileOverlayVertical || preset.mobileVertical || slide.overlayVertical || preset.vertical)
+        : (slide.overlayVertical || preset.vertical);
+      const overlayHorizontal = isMobileHero
+        ? (slide.mobileOverlayHorizontal || preset.mobileHorizontal || slide.overlayHorizontal || preset.horizontal)
+        : (slide.overlayHorizontal || preset.horizontal);
       heroSection.style.setProperty("--hero-overlay-vertical", overlayVertical);
       heroSection.style.setProperty("--hero-overlay-horizontal", overlayHorizontal);
     }
@@ -3768,6 +4076,11 @@
       }
       heroPrev?.addEventListener("click", () => moveHero(-1));
       heroNext?.addEventListener("click", () => moveHero(1));
+      if (heroMobileOverlayQuery.addEventListener) {
+        heroMobileOverlayQuery.addEventListener("change", () => renderHero(heroIndex));
+      } else if (heroMobileOverlayQuery.addListener) {
+        heroMobileOverlayQuery.addListener(() => renderHero(heroIndex));
+      }
     }
 
     const newsTrack = document.getElementById("newsTrack");
@@ -3788,42 +4101,68 @@
     newsPrev?.addEventListener("click", () => moveNews(-1));
     newsNext?.addEventListener("click", () => moveNews(1));
 
-    const featuredProductTrack = document.getElementById("featuredProductTrack");
-    const featuredProductPrev = document.querySelector("[data-featured-product-prev]");
-    const featuredProductNext = document.querySelector("[data-featured-product-next]");
+    function enableDragScroll(track) {
+      if (!track) return;
 
-    function getFeaturedProductStep() {
-      if (!featuredProductTrack) return 0;
-      const card = featuredProductTrack.querySelector(".featured-product-card");
-      if (!card) return 0;
-      const gap = parseFloat(getComputedStyle(featuredProductTrack).gap) || 12;
-      return card.getBoundingClientRect().width + gap;
-    }
+      let isPointerDown = false;
+      let hasDragged = false;
+      let startX = 0;
+      let startScrollLeft = 0;
+      const dragThreshold = 6;
 
-    function updateFeaturedProductArrows() {
-      if (!featuredProductTrack || !featuredProductPrev || !featuredProductNext) return;
-      const maxScroll = featuredProductTrack.scrollWidth - featuredProductTrack.clientWidth;
-      const atStart = featuredProductTrack.scrollLeft <= 4;
-      const atEnd = featuredProductTrack.scrollLeft >= maxScroll - 4;
-      featuredProductPrev.disabled = atStart;
-      featuredProductNext.disabled = atEnd;
-    }
+      track.addEventListener("pointerdown", (event) => {
+        if (event.pointerType === "touch") return;
+        if (event.button !== 0) return;
+        isPointerDown = true;
+        hasDragged = false;
+        startX = event.clientX;
+        startScrollLeft = track.scrollLeft;
+        track.setPointerCapture(event.pointerId);
+      });
 
-    function moveFeaturedProducts(direction) {
-      if (!featuredProductTrack) return;
-      const step = getFeaturedProductStep();
-      if (!step) return;
-      featuredProductTrack.scrollBy({
-        left: direction * step,
-        behavior: "smooth"
+      track.addEventListener("pointermove", (event) => {
+        if (!isPointerDown) return;
+        const deltaX = event.clientX - startX;
+        if (Math.abs(deltaX) > dragThreshold) {
+          hasDragged = true;
+          track.classList.add("is-dragging");
+          event.preventDefault();
+        }
+        if (hasDragged) {
+          track.scrollLeft = startScrollLeft - deltaX;
+        }
+      });
+
+      const endDrag = (event) => {
+        if (!isPointerDown) return;
+        isPointerDown = false;
+        track.classList.remove("is-dragging");
+        if (event && track.hasPointerCapture?.(event.pointerId)) {
+          track.releasePointerCapture(event.pointerId);
+        }
+      };
+
+      track.addEventListener("pointerup", endDrag);
+      track.addEventListener("pointercancel", endDrag);
+      track.addEventListener("lostpointercapture", () => {
+        isPointerDown = false;
+        track.classList.remove("is-dragging");
+      });
+
+      track.addEventListener("click", (event) => {
+        if (!hasDragged) return;
+        event.preventDefault();
+        event.stopPropagation();
+        hasDragged = false;
+      }, true);
+
+      track.addEventListener("dragstart", (event) => {
+        event.preventDefault();
       });
     }
 
-    featuredProductPrev?.addEventListener("click", () => moveFeaturedProducts(-1));
-    featuredProductNext?.addEventListener("click", () => moveFeaturedProducts(1));
-    featuredProductTrack?.addEventListener("scroll", updateFeaturedProductArrows, { passive: true });
-    window.addEventListener("resize", updateFeaturedProductArrows);
-    updateFeaturedProductArrows();
+    enableDragScroll(document.getElementById("featuredProductTrack"));
+    enableDragScroll(document.getElementById("clearanceProductTrack"));
 
     const clearanceSection = document.getElementById("clearance-products");
     const featuredProductsSection = document.getElementById("featured-products");
@@ -3834,43 +4173,6 @@
     ) {
       featuredProductsSection.parentNode.insertBefore(clearanceSection, featuredProductsSection);
     }
-
-    const clearanceProductTrack = document.getElementById("clearanceProductTrack");
-    const clearanceProductPrev = document.querySelector("[data-clearance-product-prev]");
-    const clearanceProductNext = document.querySelector("[data-clearance-product-next]");
-
-    function getClearanceProductStep() {
-      if (!clearanceProductTrack) return 0;
-      const card = clearanceProductTrack.querySelector(".featured-product-card");
-      if (!card) return 0;
-      const gap = parseFloat(getComputedStyle(clearanceProductTrack).gap) || 12;
-      return card.getBoundingClientRect().width + gap;
-    }
-
-    function updateClearanceProductArrows() {
-      if (!clearanceProductTrack || !clearanceProductPrev || !clearanceProductNext) return;
-      const maxScroll = clearanceProductTrack.scrollWidth - clearanceProductTrack.clientWidth;
-      const atStart = clearanceProductTrack.scrollLeft <= 4;
-      const atEnd = clearanceProductTrack.scrollLeft >= maxScroll - 4;
-      clearanceProductPrev.disabled = atStart;
-      clearanceProductNext.disabled = atEnd;
-    }
-
-    function moveClearanceProducts(direction) {
-      if (!clearanceProductTrack) return;
-      const step = getClearanceProductStep();
-      if (!step) return;
-      clearanceProductTrack.scrollBy({
-        left: direction * step,
-        behavior: "smooth"
-      });
-    }
-
-    clearanceProductPrev?.addEventListener("click", () => moveClearanceProducts(-1));
-    clearanceProductNext?.addEventListener("click", () => moveClearanceProducts(1));
-    clearanceProductTrack?.addEventListener("scroll", updateClearanceProductArrows, { passive: true });
-    window.addEventListener("resize", updateClearanceProductArrows);
-    updateClearanceProductArrows();
 
     const solutionSection = document.querySelector(".advantage-section");
     const solutionTrack = document.getElementById("solutionTrack");
@@ -4100,6 +4402,70 @@
     }
 
     RanotechPreviewAuth.initLoginGate();
+  </script>
+
+  <script>
+    (async function () {
+      await (window.homeLayoutReady || Promise.resolve());
+      var topbar = document.querySelector(".topbar");
+      var toggle = document.querySelector(".nav-toggle");
+      var nav = document.getElementById("primary-nav");
+      if (!topbar || !toggle || !nav) return;
+
+      var mobileQuery = window.matchMedia("(max-width: 1080px)");
+
+      function setOpen(open) {
+        topbar.classList.toggle("is-nav-open", open);
+        document.body.classList.toggle("is-nav-locked", open && mobileQuery.matches);
+        toggle.setAttribute("aria-expanded", open ? "true" : "false");
+        toggle.setAttribute("aria-label", open ? "ปิดเมนู" : "เปิดเมนู");
+        if (!open) {
+          nav.querySelectorAll(".nav-item.is-submenu-open").forEach(function (item) {
+            item.classList.remove("is-submenu-open");
+          });
+        }
+      }
+
+      toggle.addEventListener("click", function () {
+        setOpen(!topbar.classList.contains("is-nav-open"));
+      });
+
+      nav.addEventListener("click", function (event) {
+        if (!mobileQuery.matches) return;
+        var link = event.target.closest(".nav-link");
+        if (link && link.parentElement && link.parentElement.querySelector(":scope > .nav-dropdown")) {
+          event.preventDefault();
+          var item = link.parentElement;
+          var willOpen = !item.classList.contains("is-submenu-open");
+          nav.querySelectorAll(".nav-item.is-submenu-open").forEach(function (openItem) {
+            if (openItem !== item) openItem.classList.remove("is-submenu-open");
+          });
+          item.classList.toggle("is-submenu-open", willOpen);
+          return;
+        }
+        if (event.target.closest("a")) {
+          setOpen(false);
+        }
+      });
+
+      document.addEventListener("click", function (event) {
+        if (!topbar.classList.contains("is-nav-open")) return;
+        if (topbar.contains(event.target)) return;
+        setOpen(false);
+      });
+
+      document.addEventListener("keydown", function (event) {
+        if (event.key === "Escape" && topbar.classList.contains("is-nav-open")) {
+          setOpen(false);
+        }
+      });
+
+      if (typeof mobileQuery.addEventListener === "function") {
+        mobileQuery.addEventListener("change", function () {
+          if (!mobileQuery.matches) setOpen(false);
+        });
+      }
+    })();
   </script>
 </body>
 </html>
